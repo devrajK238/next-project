@@ -1,6 +1,7 @@
 import BlogSection from "@/components/BlogSection";
 import Hero from "@/components/Hero";
 import FacultySlider from "@/components/FacultySlider";
+import Image from "next/image";
 export default function HomePage() {
   return (
     <>
@@ -20,10 +21,14 @@ export default function HomePage() {
             </p>
           </div>
           <div className="aboutImageWrapper">
-            <img
+          
+
+            <Image
               src="https://picsum.photos/id/1011/600/400"
               alt="Who we are"
               className="aboutImage"
+              width={400}
+              height={400}
             />
           </div>
         </div>

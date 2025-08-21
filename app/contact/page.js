@@ -2,6 +2,7 @@
 import "@/styles/Contact.css";
 import "@/styles/Button.css";
 
+
 export default function Contact() {
   return (
     <main>
@@ -16,7 +17,7 @@ export default function Contact() {
         <div className="contactHeroOverlay">
           <h1 className="contactHeroTitle">Get in Touch</h1>
           <p className="contactHeroSubtitle">
-            We'd love to hear from you. Reach out anytime!
+            We&apos;d love to hear from you. Reach out anytime!
           </p>
         </div>
       </section>

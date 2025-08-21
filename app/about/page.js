@@ -1,5 +1,6 @@
 "use client";
 import "@/styles/About.css";
+import Image from "next/image";
 
 export default function About() {
   return (
@@ -26,20 +27,22 @@ export default function About() {
           <div className="aboutText">
             <h2 className="heading">Who We Are</h2>
             <p>
-              We are a creative team passionate about technology, design, 
-              and innovation. Our goal is to craft impactful digital products 
-              that empower businesses and communities. ✨
+              We are a creative team passionate about technology, design, and
+              innovation. Our goal is to craft impactful digital products that
+              empower businesses and communities. ✨
             </p>
             <p>
-              With years of combined expertise, we focus on delivering 
-              scalable, modern, and user-friendly solutions.
+              With years of combined expertise, we focus on delivering scalable,
+              modern, and user-friendly solutions.
             </p>
           </div>
           <div className="aboutImageWrapper">
-            <img
+            <Image
               src="https://picsum.photos/id/1011/600/400"
               alt="Who we are"
               className="aboutImage"
+              width={400}
+              height={400}
             />
           </div>
         </div>
@@ -51,14 +54,14 @@ export default function About() {
           <div className="missionCard">
             <h3>🌍 Our Mission</h3>
             <p>
-              To build world-class digital solutions that help businesses grow 
+              To build world-class digital solutions that help businesses grow
               and communities connect globally.
             </p>
           </div>
           <div className="missionCard">
             <h3>🚀 Our Vision</h3>
             <p>
-              To be the most trusted partner in digital transformation by 
+              To be the most trusted partner in digital transformation by
               empowering people with innovative technology.
             </p>
           </div>
@@ -71,22 +74,49 @@ export default function About() {
           <h2 className="heading center">Meet Our Team</h2>
           <div className="teamGrid">
             <div className="teamCard">
-              <img src="https://picsum.photos/id/1005/200/200" alt="Team 1" />
+              <Image
+                src="https://picsum.photos/id/1005/200/200"
+                alt="Team 1"
+                className="aboutImage"
+                width={400}
+                height={400}
+              />
+
               <h3>Dev Raj</h3>
               <p>Frontend Developer</p>
             </div>
             <div className="teamCard">
-              <img src="https://picsum.photos/id/1011/200/200" alt="Team 2" />
+              <Image
+                src="https://picsum.photos/id/1005/200/200"
+                alt="Team 2"
+                className="aboutImage"
+                width={400}
+                height={400}
+              />
               <h3>Anita Sharma</h3>
               <p>UI/UX Designer</p>
             </div>
             <div className="teamCard">
-              <img src="https://picsum.photos/id/1012/200/200" alt="Team 3" />
+              <Image
+                src="https://picsum.photos/id/1012/200/200"
+                alt="Team 3"
+                className="aboutImage"
+                width={400}
+                height={400}
+              />
+
               <h3>Rahul Mehta</h3>
               <p>Backend Engineer</p>
             </div>
             <div className="teamCard">
-              <img src="https://picsum.photos/id/1015/200/200" alt="Team 4" />
+              <Image
+                src="https://picsum.photos/id/1015/200/200"
+                alt="Team 4"
+                className="aboutImage"
+                width={400}
+                height={400}
+              />
+
               <h3>Priya Singh</h3>
               <p>Project Manager</p>
             </div>

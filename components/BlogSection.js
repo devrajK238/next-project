@@ -1,6 +1,7 @@
 // app/components/BlogSection.js
 import Link from "next/link";
 import "@/styles/BlogSection.css";
+import Image from "next/image";
 import "@/styles/Button.css";
 
 export default async function BlogSection() {
@@ -48,7 +49,14 @@ export default async function BlogSection() {
             {blogs.map((blog) => (
               <div key={blog.id} className="card">
                 <div className="heading">
-                  <img src={blog.image} alt={blog.title} className="cardImage" />
+                  
+                  <Image
+                    src={blog.image}
+                    alt={blog.title}
+                    className="cardImage"
+                    width={400}
+                    height={400}
+                  />
                   <h3>{blog.title}</h3>
                   <p>{blog.body.slice(0, 80)}...</p>
                 </div>

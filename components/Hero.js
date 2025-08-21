@@ -10,7 +10,7 @@ export default function Hero() {
       <div className={styles.container}>
         {/* Left: Text */}
         <div className={styles.textContent}>
-          <h1 className={styles.title}>Hi, I'm Dev Raj 👋</h1>
+          <h1 className={styles.title}>Hi, I&apos;m Dev Raj 👋</h1>
           <p className={styles.bio}>
             A passionate Web Developer with experience in React, Next.js, and
             modern web technologies. I love building user-friendly applications
