@@ -1,0 +1,69 @@
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 1rem;
+    background: #ff7b54;
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #ff5722;
+    color: white;
+}
+
+
+/* Sizes */
+
+.sm {
+    padding: 6px 14px;
+    font-size: 0.85rem;
+}
+
+.md {
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+
+.lg {
+    padding: 14px 28px;
+    font-size: 1.15rem;
+}
+
+.fullWidth {
+    width: 100%;
+}
+
+
+/* Colors / Variants */
+
+.primary {
+    background: #0070f3;
+    color: #fff;
+}
+
+.primary:hover {
+    background: #0051a8;
+}
+
+.secondary {
+    background: #ff7b54;
+    color: #fff;
+}
+
+.secondary:hover {
+    background: #ff5722;
+}
+
+.outline {
+    background: transparent;
+    border: 2px solid #0070f3;
+    color: #0070f3;
+}
+
+.outline:hover {
+    background: #0070f3;
+    color: #fff;
+}

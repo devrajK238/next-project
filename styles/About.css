@@ -1,0 +1,154 @@
+/* 🌟 Hero Section */
+
+.aboutHero {
+    height: 65vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.aboutHeroOverlay {
+    max-width: 700px;
+    padding: 0 20px;
+}
+
+.aboutHeroTitle {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.aboutHeroSubtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+
+/* 📝 About Content */
+
+.aboutSection {
+    padding: 70px 20px;
+}
+
+.aboutContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.aboutText p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin: 15px 0;
+    color: #444;
+}
+
+.aboutImageWrapper {
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.aboutImage {
+    width: 100%;
+    transition: transform 0.5s ease;
+}
+
+.aboutImageWrapper:hover .aboutImage {
+    transform: scale(1.05);
+}
+
+
+/* 🎯 Mission / Vision Section */
+
+.missionSection {
+    padding: 70px 20px;
+    background: #f9f9f9;
+}
+
+.missionGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.missionCard {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    transition: 0.3s ease;
+}
+
+.missionCard:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+/* 👨‍👩‍👧 Team Section */
+
+.teamSection {
+    padding: 70px 20px;
+}
+
+.teamGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.teamCard {
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.teamCard:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.teamCard img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+.teamCard h3 {
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+}
+
+.teamCard p {
+    font-size: 0.95rem;
+    color: #666;
+}
+
+
+/* ✨ Animations */
+
+.fadeIn {
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

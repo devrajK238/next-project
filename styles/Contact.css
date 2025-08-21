@@ -1,0 +1,143 @@
+/* 🌟 Hero Section */
+
+.contactHero {
+    height: 65vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    background-attachment: fixed;
+}
+
+.contactHeroOverlay {
+    max-width: 700px;
+    padding: 0 20px;
+}
+
+.contactHeroTitle {
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.contactHeroSubtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+
+/* 📍 Contact Info */
+
+.contactInfo {
+    padding: 80px 20px;
+    background: #f9fafc;
+}
+
+.contactGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.infoCard {
+    background: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.infoCard:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.infoCard h3 {
+    margin-bottom: 10px;
+    color: #ff7b54;
+}
+
+
+/* 📝 Contact Form */
+
+.contactFormSection {
+    padding: 80px 20px;
+}
+
+.formWrapper {
+    max-width: 650px;
+    margin: auto;
+    background: #ffffff;
+    padding: 50px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border-radius: 10px;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contactForm input,
+.contactForm textarea {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.contactForm input:focus,
+.contactForm textarea:focus {
+    border-color: #0070f3;
+    outline: none;
+    box-shadow: 0 0 6px rgba(0, 112, 243, 0.3);
+}
+
+
+/* 🔘 Reusable Primary Button */
+
+.primaryBtn {
+    background: linear-gradient(135deg, #0070f3, #0057c2);
+    color: #fff;
+    border: none;
+    padding: 15px;
+    border-radius: 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.primaryBtn:hover {
+    background: linear-gradient(135deg, #0057c2, #003a91);
+    transform: translateY(-2px);
+}
+
+
+/* 🗺️ Map Section */
+
+.mapSection iframe {
+    border-radius: 12px;
+}
+
+
+/* ✨ Animations */
+
+.fadeIn {
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

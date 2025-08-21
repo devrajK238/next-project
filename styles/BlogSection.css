@@ -1,0 +1,256 @@
+/* .blogSection {
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+} */
+
+.heading {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    font-weight: bold;
+    color: #222;
+    position: relative;
+    display: inline-block;
+}
+
+.heading::after {
+    content: "";
+    position: absolute;
+    width: 60%;
+    height: 3px;
+    background: #ff7b54;
+    left: 0;
+    bottom: -8px;
+    border-radius: 2px;
+}
+
+.blogGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(410px, 1fr));
+    grid-gap: 30px;
+    gap: 30px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 30px;
+    min-height: 330px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardImage {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px 6px 0 0;
+}
+
+.card .heading {
+    margin: 0;
+}
+
+.card .heading::after {
+    display: none;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.cardContent {
+    padding: 25px;
+    text-align: left;
+}
+
+.card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.btnWrapper {
+    margin-top: 40px;
+}
+
+
+/* 🌟 Blog Hero Section */
+
+.blogHero {
+    position: relative;
+    height: 70vh;
+    background: url("https://picsum.photos/id/1039/1600/900") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.blogHeroTitle {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.blogHeroSubtitle {
+    font-size: 1.25rem;
+    color: #ddd;
+    margin-bottom: 1.5rem;
+}
+
+.heroBtn {
+    background: #ff5722;
+    color: #fff;
+    font-weight: 600;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+.heroBtn:hover {
+    background: #e64a19;
+}
+
+
+/* Blog Detail Page */
+
+
+/* 🌟 Hero Section */
+
+.blogHero {
+    position: relative;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+.blogHeroOverlay {
+    max-width: 800px;
+    padding: 50px;
+    background: rgba(0, 0, 0, 0.55);
+    border-radius: 12px;
+}
+
+.blogHeroTitle {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    animation: slideUp 1s ease;
+}
+
+.blogHeroSubtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    animation: slideUp 1.3s ease;
+}
+
+
+/* 📝 Blog Content */
+
+.blogDetail {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.blogBody {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #444;
+    margin-top: 20px;
+}
+
+
+/* 🖼️ Featured Image */
+
+.imageWrapper {
+    overflow: hidden;
+    border-radius: 15px;
+    margin: 25px 0;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.blogContentImage {
+    width: 100%;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.imageWrapper:hover .blogContentImage {
+    transform: scale(1.05);
+}
+
+
+/* 🔙 Back Button */
+
+.backBtn {
+    display: inline-block;
+    margin-top: 25px;
+    background: #222;
+    color: #fff !important;
+    border-radius: 30px;
+    padding: 12px 24px;
+    transition: 0.3s ease;
+}
+
+.backBtn:hover {
+    background: #000;
+    transform: translateY(-2px);
+}
+
+
+/* ✨ Animations */
+
+.fadeIn {
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.errorMessage {
+    text-align: center;
+    color: #ff5722;
+    font-weight: 600;
+    background: #fff3f0;
+    padding: 15px;
+    border-radius: 8px;
+}
