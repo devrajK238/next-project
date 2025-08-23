@@ -18,6 +18,11 @@
 /out/
 .next.zip
 
+.next
+out
+node_modules
+*.zip
+
 # production
 /build
 
